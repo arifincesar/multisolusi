@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>Simple Calculator</title>
+
+    
 </head>
 <body>
-    <h1>helloooo</h1>
-    
+    <form name="kalkulator">
+    <h1>welcome to my simply calculator web</h1>
+    <input type="number" name="angkapertama" class="form-control" placeholder="angka pertama" aria-label="angka pertama">
+    <input type="number" name="angkakedua" class="form-control" placeholder="angka kedua" aria-label="angka kedua">
+    <button type="button" onclick="tambah()" value="+">=</button>
+    <input type="number" name="hasil" class="form-control" placeholder="" aria-label="hasil">
+    </form>
+
+    <script type="text/javascript">
+        function tambah(){
+            var angkapertama = parseFloat(document.kalkulator.angkapertama.value);
+            var angkakedua = parseFloat(document.kalkulator.angkakedua.value);
+            var hasil = angkapertama+angkakedua;
+            document.kalkulator.hasil.value=hasil;
+        }
+    </script>
 </body>
 </html>
