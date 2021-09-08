@@ -14,7 +14,11 @@
     <h1>welcome to my simply calculator web</h1>
     <input type="number" name="angkapertama" class="form-control" placeholder="angka pertama" aria-label="angka pertama">
     <input type="number" name="angkakedua" class="form-control" placeholder="angka kedua" aria-label="angka kedua">
-    <button type="button" onclick="tambah()" value="+">=</button>
+    <br>
+    <button type="button" onclick="tambah()" value="+">+</button>
+    <button type="button" onclick="kurang()" value="-">-</button>
+    <button type="button" onclick="bagi()" value="/">/</button>
+    <button type="button" onclick="kali()" value="*">*</button>
     <input type="number" name="hasil" class="form-control" placeholder="" aria-label="hasil">
     </form>
 
@@ -23,6 +27,24 @@
             var angkapertama = parseFloat(document.kalkulator.angkapertama.value);
             var angkakedua = parseFloat(document.kalkulator.angkakedua.value);
             var hasil = angkapertama+angkakedua;
+            document.kalkulator.hasil.value=hasil;
+        }
+        function kurang(){
+            var angkapertama = parseFloat(document.kalkulator.angkapertama.value);
+            var angkakedua = parseFloat(document.kalkulator.angkakedua.value);
+            var hasil = angkapertama-angkakedua;
+            document.kalkulator.hasil.value=hasil;
+        }
+        function bagi(){
+            var angkapertama = parseFloat(document.kalkulator.angkapertama.value);
+            var angkakedua = parseFloat(document.kalkulator.angkakedua.value);
+            var hasil = angkapertama/angkakedua;
+            document.kalkulator.hasil.value=hasil;
+        }
+        function kali(){
+            var angkapertama = parseFloat(document.kalkulator.angkapertama.value);
+            var angkakedua = parseFloat(document.kalkulator.angkakedua.value);
+            var hasil = angkapertama*angkakedua;
             document.kalkulator.hasil.value=hasil;
         }
     </script>
