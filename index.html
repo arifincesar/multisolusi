@@ -7,10 +7,9 @@
     , initial-scale=1.0">
     <title>Simple Calculator</title>
 
-    
 </head>
 <body>
-    <form name="kalkulator">
+    <form name="kalkulator" >
     <h1>welcome to my simply calculator web</h1>
     <input type="number" name="angkapertama" class="form-control" placeholder="angka pertama" aria-label="angka pertama">
     <input type="number" name="angkakedua" class="form-control" placeholder="angka kedua" aria-label="angka kedua">
@@ -19,6 +18,7 @@
     <button type="button" onclick="kurang()" value="-">-</button>
     <button type="button" onclick="bagi()" value="/">/</button>
     <button type="button" onclick="kali()" value="*">*</button>
+    <br>
     <input type="number" name="hasil" class="form-control" placeholder="" aria-label="hasil">
     </form>
 
@@ -48,5 +48,6 @@
             document.kalkulator.hasil.value=hasil;
         }
     </script>
+
 </body>
 </html>
